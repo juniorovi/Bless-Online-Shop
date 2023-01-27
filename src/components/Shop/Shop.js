@@ -5,7 +5,7 @@ import './Shop.css'
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
-    
+    const [data, setData]= useState('');
 
     useEffect(() => {
         fetch('products.json')
@@ -13,11 +13,13 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, []);
 
-    const btnClicked =(clickedProduct)=>{
-        console.log(clickedProduct.name);
-        <h1>{clickedProduct.name}</h1>
+    
+    const btnClicked = (data) => {
+        setData(data);
+        console.log(data.name);
+        
     }
-   
+
     return (
         <div className='shop-container'>
             {/* <h3>{product.name}</h3> */}
@@ -30,9 +32,9 @@ const Shop = () => {
                     ></Product>)
                 }
             </div>
-            <div className='cart-container'>
-            <Cart></Cart>
-            </div>
+            <Cart btnClicked={btnClicked}></Cart>
+            <h1>{data.name}</h1>
+            
         </div>
     );
 };

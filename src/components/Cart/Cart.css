@@ -1,0 +1,7 @@
+.cart{
+    height: 500px;
+    background-color: bisque;
+    margin: 0 10px;
+    position: sticky;
+    top: 0;
+}
