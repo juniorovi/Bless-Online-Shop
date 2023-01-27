@@ -32,8 +32,8 @@ const Shop = () => {
                     ></Product>)
                 }
             </div>
-            <Cart btnClicked={btnClicked}></Cart>
-            <h1>{data.name}</h1>
+            <Cart btnClicked={btnClicked} data={data}></Cart>
+            
             
         </div>
     );
