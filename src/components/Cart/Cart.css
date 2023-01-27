@@ -5,3 +5,16 @@
     position: sticky;
     top: 0;
 }
+.cartInfo img{
+    padding-left: 3px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+}
+.cartInfo{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    align-items: center;
+    justify-content: center;
+}

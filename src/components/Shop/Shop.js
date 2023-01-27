@@ -16,7 +16,7 @@ const Shop = () => {
     
     const btnClicked = (data) => {
         setData(data);
-        console.log(data.name);
+        console.log(data);
         
     }
 
