@@ -6,8 +6,8 @@ const Cart = (props) => {
         <div className='cart'>
             <h3>Cart Container</h3>
             <div className='cartInfo'>
-                <img src={props.data.image} alt="" />
-                <h4>{props.data.name}</h4>
+                <img src={props.storedData.image} alt="" />
+                <h4>{props.storedData.name}</h4>
             </div>
         </div>
     );

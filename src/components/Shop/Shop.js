@@ -6,6 +6,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [data, setData]= useState('');
+    const storedData =[];
 
     useEffect(() => {
         fetch('products.json')
@@ -15,8 +16,9 @@ const Shop = () => {
 
     
     const btnClicked = (data) => {
-        setData(data);
-        console.log(data);
+        storedData.push(setData(data));
+        
+        console.log(typeof(storedData));
         
     }
 
@@ -32,7 +34,7 @@ const Shop = () => {
                     ></Product>)
                 }
             </div>
-            <Cart btnClicked={btnClicked} data={data}></Cart>
+            <Cart btnClicked={btnClicked} storedData={data}></Cart>
             
             
         </div>
