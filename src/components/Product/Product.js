@@ -5,10 +5,11 @@ import './Product.css';
 
 const Product = ({ product, btnClicked }) => {
     const { price, name, image } = product;
-
+    console.log(image);
     return (
         <div>
             <div className='product'>
+                
                 <img src={image} alt="" />
                 <div>
                     <p>{name}</p>
