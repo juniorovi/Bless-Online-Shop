@@ -5,7 +5,7 @@ import './Product.css';
 
 const Product = ({ product, btnClicked }) => {
     const { price, name, image } = product;
-    console.log(image);
+    // console.log(image);
     return (
         <div>
             <div className='product'>

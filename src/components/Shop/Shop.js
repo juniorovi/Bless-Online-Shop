@@ -15,6 +15,9 @@ const Shop = () => {
 
     const btnClicked = (product) => {
         const newData =[...data, product];
+        if(newData.length >=5){
+            return alert("Cart is full")
+        }
         setData(newData);
     }
     return (
@@ -28,13 +31,12 @@ const Shop = () => {
                     ></Product>)
                 }
             </div>
-            {/* <h1>clicked:{data.length}</h1> */}
-            {
+            <Cart data={data}></Cart>
+            {/* {
                 data.map(datum=><Cart
                 datum ={datum}
                 ></Cart>)
-            }
-            {/* <Cart data={data} d={}></Cart> */}
+            } */}
         </div>
     );
 };
