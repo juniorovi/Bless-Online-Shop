@@ -1,7 +1,7 @@
 import React from 'react';
 import './Cart.css'
 
-const Cart = ({ data }) => {
+const Cart = ({ data, luckyBtn }) => {
     return (
         <div className='cart'>
             <h3>Cart Container</h3>
@@ -11,12 +11,13 @@ const Cart = ({ data }) => {
                     <div className='cartInfo'>
                         <img src={item.image} alt="" />
                         <h4>{item.name}</h4>
-                        
                     </div>
                     )
                 })
             }
             
+            
+            <button onClick={()=>luckyBtn()}><p>Chose Lucky One</p></button>
         </div>
     );
 };

@@ -7,3 +7,9 @@
     padding: 10px;
     position: relative;
 }
+.productInfo button{
+    border: 0px;
+}
+.productInfo button:hover{
+    background-color: aquamarine;
+}

@@ -1,17 +1,12 @@
 import React from 'react';
 import './Product.css';
-
-
-
 const Product = ({ product, btnClicked }) => {
     const { price, name, image } = product;
-    // console.log(image);
     return (
         <div>
             <div className='product'>
-                
                 <img src={image} alt="" />
-                <div>
+                <div className='productInfo'>
                     <p>{name}</p>
                     <p>{price} </p>
                     <button onClick={() => btnClicked(product)}><p>Add To Cart</p></button>

@@ -20,6 +20,10 @@ const Shop = () => {
         }
         setData(newData);
     }
+
+    const luckyOne=()=>{
+        console.log('Hello lucky one');
+    }
     return (
         <div className='shop-container'>
             <div className='products-container'>
@@ -31,12 +35,7 @@ const Shop = () => {
                     ></Product>)
                 }
             </div>
-            <Cart data={data}></Cart>
-            {/* {
-                data.map(datum=><Cart
-                datum ={datum}
-                ></Cart>)
-            } */}
+            <Cart data={data} luckyBtn={luckyOne}></Cart>
         </div>
     );
 };
