@@ -1,0 +1,17 @@
+.footer {
+    margin: 20px 0;
+    border: 2px solid navy;
+}
+
+.q1 {
+    background-color: rgb(160, 75, 239);
+    padding: 15px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.q2 {
+    background-color: rgb(160, 75, 239);
+    padding: 15px;
+    word-wrap: break-word;
+}
