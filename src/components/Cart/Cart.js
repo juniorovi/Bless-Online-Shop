@@ -10,14 +10,12 @@ const Cart = ({ data, luckyBtn }) => {
                     return(
                     <div className='cartInfo'>
                         <img src={item.image} alt="" />
-                        <h4>{item.name}</h4>
+                        <p>{item.name}</p>
                     </div>
                     )
                 })
             }
-            
-            
-            <button onClick={()=>luckyBtn()}><p>Chose Lucky One</p></button>
+            <button onClick={()=>luckyBtn()} className="luckyBtn"><p>Chose Lucky One</p></button>
         </div>
     );
 };

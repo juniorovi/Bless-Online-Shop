@@ -18,3 +18,9 @@
     align-items: center;
     justify-content: center;
 }
+.luckyBtn{
+    border: 0px;
+}
+.luckyBtn:hover{
+    background-color: burlywood;
+}

@@ -7,9 +7,17 @@
     padding: 10px;
     position: relative;
 }
-.productInfo button{
-    border: 0px;
+.productInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.productInfo button:hover{
+.btnCart{
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btnCart:hover{
     background-color: aquamarine;
 }
